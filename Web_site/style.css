@@ -89,3 +89,15 @@ footer {
     padding: 20px;
     color: #777;
 }
+pre {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    text-align: left;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
