@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>利用方法 | ポストチェッカー</title>
+```
+<title>利用方法 | ポストチェッカー</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
@@ -18,54 +22,84 @@
 
 <main>
 
-    <h2>アプリの使い方</h2>
+```
+<h2>ポストチェッカーの利用方法</h2>
 
-    <div class="description">
-        <p>
-            ポストチェッカーの基本的な利用手順を説明します。
-        </p>
-    </div>
+<div class="description">
+    <p>
+        ポストチェッカーを使用するための手順を説明します。
+    </p>
+</div>
 
-    <div class="info">
 
-        <h3>① アプリをダウンロード</h3>
-        <p>
-            ダウンロードページからアプリをダウンロードします。
-        </p>
+<div class="info">
 
-        <h3>② アプリを起動</h3>
-        <p>
-            ダウンロードしたファイルを実行して、アプリを起動します。
-        </p>
+    <h3>① Windows PowerShellを起動</h3>
 
-        <h3>③ 文章を入力</h3>
-        <p>
-            チェックしたいポスト内容を入力欄に入力します。
-        </p>
+    <p>
+        Windows PowerShellを起動し、
+        「ollama-models」フォルダへ移動します。
+    </p>
 
-        <h3>④ チェックを実行</h3>
-        <p>
-            「チェック」ボタンを押して、内容を確認します。
-        </p>
+    <pre><code>cd C:\Users\ユーザ名\ollama-models</code></pre>
 
-        <h3>⑤ 結果を確認</h3>
-        <p>
-            チェック結果を確認し、必要に応じて文章を修正します。
-        </p>
 
-    </div>
+    <h3>② プログラムを起動</h3>
 
-    <div style="margin-top: 30px;">
-        <a href="download.html" class="download-button">
-            ダウンロードページへ
-        </a>
-    </div>
+    <p>
+        以下のコマンドを入力してプログラムを実行します。
+    </p>
 
-    <div style="margin-top: 20px;">
-        <a href="index.html" class="back">
-            ← トップページへ戻る
-        </a>
-    </div>
+    <pre><code>python pii_detector_app_ver8.py</code></pre>
+
+
+    <h3>③ 送信メールアドレスを設定</h3>
+
+    <p>
+        送信メールアドレスには、
+        2段階認証を設定したGoogleアカウントのメールアドレスを入力してください。
+    </p>
+
+
+    <h3>④ パスワードを設定</h3>
+
+    <p>
+        パスワードには、Googleアカウントで作成した
+        <strong>アプリパスワード</strong>
+        を入力してください。
+    </p>
+
+    <p>
+        通常のGoogleアカウントのパスワードではなく、
+        アプリパスワードを使用してください。
+    </p>
+
+
+    <h3>⑤ 使用するデータを設定</h3>
+
+    <p>
+        ポストチェッカーでチェックするデータを設定してください。
+    </p>
+
+    <p>
+        使用するデータを設定したら、設定内容を確認して利用を開始してください。
+    </p>
+
+</div>
+
+
+<div style="margin-top: 30px;">
+    <a href="download.html" class="download-button">
+        ダウンロードページへ
+    </a>
+</div>
+
+<div style="margin-top: 20px;">
+    <a href="index.html" class="back">
+        ← トップページへ戻る
+    </a>
+</div>
+```
 
 </main>
 
