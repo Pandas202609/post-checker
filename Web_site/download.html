@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -22,16 +23,156 @@
     <div class="description">
         <p>
             ポストチェッカーを使用するには、<br>
-            以下のボタンからアプリをダウンロードしてください。
+            以下の事前準備を行ってからアプリをダウンロードしてください。
         </p>
     </div>
 
-    <!-- アプリ完成後にReleaseへのリンクを設定します -->
+
+    <!-- ==================== -->
+    <!-- 事前準備 -->
+    <!-- ==================== -->
+
+    <div class="info">
+
+        <h2>事前準備</h2>
+
+        <p>
+            Windows PowerShellでの利用を想定しています。
+        </p>
+
+
+        <h3>1. Ollamaのインストール</h3>
+
+        <p>
+            Windows PowerShellを起動し、以下のコマンドを入力してください。
+        </p>
+
+        <pre><code>irm https://ollama.com/install.ps1 | iex</code></pre>
+
+
+        <h3>2. PySimpleGUIのインストール</h3>
+
+        <p>
+            Pythonがインストールされていない場合はエラーが発生します。
+            Pythonをインストールした後、以下のコマンドを入力してください。
+        </p>
+
+        <pre><code>pip install PySimpleGUI requests</code></pre>
+
+
+        <h3>3. アプリパスワードを取得</h3>
+
+        <h4>3-1. 2段階認証を設定</h4>
+
+        <p>
+            Googleアカウントで2段階認証を設定してください。
+        </p>
+
+        <p>
+            <a href="https://support.google.com/accounts/answer/185839?hl=ja&co=GENIE.Platform%3DDesktop"
+               target="_blank"
+               rel="noopener noreferrer">
+                Googleアカウントの2段階認証の設定
+            </a>
+        </p>
+
+        <p>
+            上記のURLをクリックして、Googleアカウントの2段階認証を設定してください。
+        </p>
+
+
+        <h4>3-2. アプリパスワードを作成</h4>
+
+        <p>
+            Googleアカウントにログインした後、アプリパスワードを作成してください。
+        </p>
+
+        <p>
+            <a href="https://myaccount.google.com/apppasswords"
+               target="_blank"
+               rel="noopener noreferrer">
+                Googleアプリパスワードの作成
+            </a>
+        </p>
+
+        <p>
+            作成したアプリパスワードは、後で使用するため必ず控えておいてください。
+        </p>
+
+
+        <h3>4. Ollamaモデルをダウンロードして展開</h3>
+
+        <p>
+            以下のボタンからOllamaモデルをダウンロードしてください。
+        </p>
+
+        <p>
+            ダウンロードしたZIPファイルを展開し、
+            <strong>C:\Users\ユーザ名\</strong>の下に配置してください。
+        </p>
+
+
+        <h3>5. ELYZA-JPのAIを使用するための設定</h3>
+
+        <h4>5-1. Llama-3-ELYZA-JP-8B-GGUFをダウンロード</h4>
+
+        <p>
+            以下のページから
+            <strong>Llama-3-ELYZA-JP-8B-GGUF</strong>
+            をダウンロードしてください。
+        </p>
+
+        <p>
+            <a href="https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B-GGUF/tree/main"
+               target="_blank"
+               rel="noopener noreferrer">
+                Llama-3-ELYZA-JP-8B-GGUF
+            </a>
+        </p>
+
+        <p>
+            ダウンロードしたファイルを、
+        </p>
+
+        <pre><code>C:\Users\ユーザ名\ollama-models</code></pre>
+
+        <p>
+            に配置してください。
+        </p>
+
+
+        <h4>5-2. Ollamaモデルを作成</h4>
+
+        <p>
+            Windows PowerShellを起動し、以下のコマンドを順番に入力してください。
+        </p>
+
+        <pre><code>cd C:\Users\ユーザ名\ollama-models</code></pre>
+
+        <pre><code>ollama create elyza-jp -f Modelfile</code></pre>
+
+    </div>
+
+
+    <!-- ==================== -->
+    <!-- ダウンロード -->
+    <!-- ==================== -->
+
+    <h2>アプリのダウンロード</h2>
+
+    <div class="description">
+        <p>
+            事前準備が完了したら、以下のボタンから<br>
+            ポストチェッカーをダウンロードしてください。
+        </p>
+    </div>
+
     <a href="../Releases/ollama-models.zip"
-        download
-        class="download-button">
+       download
+       class="download-button">
         Ollamaモデルをダウンロード
     </a>
+
     <br>
 
     <a href="index.html" class="back">
@@ -46,3 +187,4 @@
 
 </body>
 </html>
+```
