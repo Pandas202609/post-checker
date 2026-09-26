@@ -101,3 +101,9 @@ pre {
 code {
     font-family: Consolas, monospace;
 }
+.info img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
